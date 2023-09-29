@@ -5,7 +5,7 @@ function App() {
   let item = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
   return (
     <div>
-      <ListGroup item={item} heading="Cities" />
+      <ListGroup items={item} heading="Cities" />
     </div>
   );
 }
