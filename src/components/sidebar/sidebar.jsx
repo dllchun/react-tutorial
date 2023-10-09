@@ -11,6 +11,8 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
+import { Users } from "/Users/vincentcheung/Desktop/Coding/react-project/social-media-clone/client/client/src/dummpyData.js";
+import CloseFriend from "../closeFriend/closefriend";
 
 export default function Sidebar() {
   return (
@@ -57,110 +59,13 @@ export default function Sidebar() {
         <button className="sideBarButton">Show More</button>
         <hr className="sideBarHr" />
         <ui className="sideBarFriendList">
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
+          {Users.map((user) => (
+            <CloseFriend
+              key={user.id}
+              username={user.username}
+              profilePicture={user.profilePicture}
             />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
-          <li className="sideBarFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jan Doe</span>
-          </li>
+          ))}
         </ui>
       </div>
     </div>
