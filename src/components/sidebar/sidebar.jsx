@@ -11,7 +11,7 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
-import { Users } from "/Users/vincentcheung/Desktop/Coding/react-project/social-media-clone/client/client/src/dummpyData.js";
+import { Users } from "C:/Users/info/react-project/social-media-app/social-media-app/src/dummpyData.js";
 import CloseFriend from "../closeFriend/closefriend";
 
 export default function Sidebar() {

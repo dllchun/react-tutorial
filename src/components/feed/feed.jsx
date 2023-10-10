@@ -5,7 +5,7 @@ import Post from "../post/post";
 import {
   Posts,
   Users,
-} from "/Users/vincentcheung/Desktop/Coding/react-project/social-media-clone/client/client/src/dummpyData.js";
+} from "C:/Users/info/react-project/social-media-app/social-media-app/src/dummpyData.js";
 
 export default function Feed() {
   return (
